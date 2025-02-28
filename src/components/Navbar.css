@@ -1,16 +1,31 @@
-/* src/components/Navbar.css */
+.navbar-container {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 5%;
-  max-width: 1280px;
+  max-width: 1300px;
   margin: 0 auto;
-  position: relative;
 }
+
+.dark-mode .navbar-container {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.light-mode .navbar-container {
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
 * .navbar-logo h1 {
-  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
   font-size: 1.5rem;
+  letter-spacing: -0.02em;
 }
 
 .navbar-links {
@@ -21,6 +36,8 @@
 
 .nav-link {
   color: inherit;
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
   font-weight: 500;
   transition: opacity 0.2s;
 }

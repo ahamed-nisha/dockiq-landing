@@ -1,4 +1,3 @@
-// src/components/Hero.jsx
 import "./Hero.css";
 import typewriterImage from "../assets/whale.png"; // You'll need to add this image to your assets folder
 
@@ -19,7 +18,7 @@ const Hero = () => {
             target="_blank"
             className="ext-link"
           >
-            Extension here
+            Extension
           </a>
           .
         </p>
