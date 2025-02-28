@@ -30,4 +30,4 @@ The site is built and deployed using GitHub Pages. Any changes to the main branc
 
 ## Connect
 
-[Find me on LinkedIn](https://www.linkedin.com/in/nisha-ahamed)
+- [Find me on LinkedIn](https://www.linkedin.com/in/nisha-ahamed)
