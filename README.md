@@ -1,12 +1,33 @@
-# React + Vite
+# DockIQ Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the code for the DockIQ landing page, which serves as the public-facing website for the DockIQ Docker extension.
 
-Currently, two official plugins are available:
+## About DockIQ
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+DockIQ is a Docker extension designed to simplify container management and provide insights for Docker users. The extension helps developers monitor and optimize their Docker containers through an intuitive interface.
 
-## Expanding the ESLint configuration
+## Development
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This landing page is built with:
+
+- React
+- Vite
+- CSS
+
+## Structure
+
+- `src/components/` - React components including Navbar and Hero sections
+- `src/assets/` - Images and other static assets
+- `public/` - Public files like favicon
+
+## Deployment
+
+The site is built and deployed using GitHub Pages. Any changes to the main branch will trigger a new deployment.
+
+## Links
+
+- [DockIQ GitHub Repository](https://github.com/oslabs-beta/DockIQ)
+
+## Connect
+
+[Find me on LinkedIn](https://www.linkedin.com/in/nisha-ahamed)
