@@ -126,5 +126,6 @@
     order: 0;
     justify-content: center;
     padding-right: 0;
+    margin-right: 0; /* Reset the negative margin to ensure center position on mobile */
   }
 }
