@@ -21,11 +21,20 @@
   border-bottom-color: rgba(0, 0, 0, 0.1);
 }
 
-* .navbar-logo h1 {
+.navbar-logo {
+  cursor: pointer;
+}
+
+.navbar-logo h1 {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
   letter-spacing: -0.02em;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover h1 {
+  transform: scale(1.05);
 }
 
 .navbar-links {
@@ -35,15 +44,32 @@
 }
 
 .nav-link {
+  position: relative;
   color: inherit;
   font-family: "Inter", sans-serif;
   font-size: 1em;
   font-weight: 500;
-  transition: opacity 0.2s;
+  text-decoration: none;
+  padding-bottom: 3px;
+  transition: color 0.3s ease;
 }
 
-.nav-link:hover {
-  opacity: 0.8;
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .theme-toggle {
@@ -54,6 +80,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease, scale 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.2);
 }
 
 .sign-in-button {

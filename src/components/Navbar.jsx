@@ -2,10 +2,14 @@ import { useState } from "react";
 import "./Navbar.css";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
+  const handleLogoClick = () => {
+    window.location.reload();
+  };
+
   return (
     <div className="navbar-container">
       <nav className="navbar">
-        <div className="navbar-logo">
+        <div className="navbar-logo" onClick={handleLogoClick}>
           <h1>DockIQ</h1>
         </div>
         <div className="navbar-links">
