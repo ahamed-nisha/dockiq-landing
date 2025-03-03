@@ -114,16 +114,10 @@
   .navbar {
     flex-direction: column;
     gap: 1rem;
-    padding: 1rem 5%;
   }
 
   .navbar-links {
     width: 100%;
     justify-content: space-between;
-  }
-
-  /* Adjust logo position for better mobile alignment */
-  .navbar-logo {
-    align-self: flex-start;
   }
 }
